@@ -54,6 +54,11 @@ section {
   box-shadow: 0 8px 22px rgba(0,0,0,0.06);
 }
 
+.hero {
+  padding: 0;          /* damit hero nicht vom section-padding beeinflusst wird */
+  background: none;    /* hero steuert sein Aussehen selbst */
+}
+
 /* Typografie-Rhythmus */
 .section-head {
   margin-bottom: 22px;
@@ -358,14 +363,15 @@ a:focus-visible {
   );
 }
 
-.hero-inner {
+..hero-inner {
   position: relative;
   z-index: 1;
-  padding: 36px 48px;   /* vorher größer */
-  min-height: 260px;    /* kompakt, aber safe für Text */
+  padding: 32px 56px;  /* NUR oben/unten kleiner */
+  min-height: 240px;   /* kompakter, aber safe */
   display: flex;
   align-items: center;
 }
+
 
 
 }
@@ -509,19 +515,18 @@ a:focus-visible {
 
 @media (max-width: 700px) {
   .hero-inner {
-    padding: 28px 20px;
-    min-height: 240px;
+    padding: 24px 20px; /* NUR oben/unten kleiner */
+    min-height: 220px;  /* kompakt, aber Text bleibt drin */
   }
-
+}
   .hero {
     max-width: 100%;
     border-radius: 14px;
   }
 }
 
-
   .hero-bg img {
-    object-position: center 88%;
+    object-position: center 85%;
   }
 }
 
