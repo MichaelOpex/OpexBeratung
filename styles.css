@@ -339,32 +339,33 @@ a:focus-visible {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center 85%; /* Fokus unten -> Himmel wird oben abgeschnitten */
 }
 
 .hero::after {
-  content: "";                     /* WICHTIG */
+  content: "";
   position: absolute;
   inset: 0;
-  z-index: 0;                      /* liegt über dem Bild */
+  z-index: 0;
   pointer-events: none;
 
   background: linear-gradient(
     90deg,
-    rgba(11, 18, 32, 0.88),
-    rgba(11, 18, 32, 0.55) 55%,
-    rgba(11, 18, 32, 0.20)
+    rgba(11, 18, 32, 0.82),
+    rgba(11, 18, 32, 0.52) 55%,
+    rgba(11, 18, 32, 0.18)
   );
 }
 
 .hero-inner {
   position: relative;
   z-index: 1;
-  padding: 56px 56px;   /* kompakter, aber noch genug Platz */
-  min-height: 320px;    /* genug für Headline + Buttons + Note */
+  padding: 44px 56px;   /* vorher größer */
+  min-height: 280px;    /* kompakt, aber safe für Text */
   display: flex;
   align-items: center;
 }
+
 
 }
 /* =========================
@@ -507,12 +508,12 @@ a:focus-visible {
 
 @media (max-width: 700px) {
   .hero-inner {
-    padding: 44px 20px;
-    min-height: 320px; /* wichtig: sonst wird Text gequetscht */
+    padding: 34px 20px;
+    min-height: 260px;
   }
 
   .hero-bg img {
-    object-position: center 80%;
+    object-position: center 88%;
   }
 }
 
