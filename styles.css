@@ -360,9 +360,9 @@ a:focus-visible {
 
 .hero-inner {
   position: relative;
-  z-index: 1;                      /* Text über Bild+Overlay */
-  padding: 83px 56px;
-  min-height: 420px;
+  z-index: 1;
+  padding: 64px 56px;   /* vorher 83px */
+  min-height: 340px;    /* vorher 420px */
   display: flex;
   align-items: center;
 }
