@@ -323,7 +323,6 @@ a:focus-visible {
 
   border-radius: 22px;
   overflow: hidden;
-  max-height: 480px;  /* begrenzt Gesamthöhe */
   border: 1px solid var(--border);
   box-shadow: 0 22px 60px rgba(0,0,0,0.18);
 }
@@ -340,7 +339,7 @@ a:focus-visible {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center bottom;
 }
 
 .hero::after {
@@ -361,10 +360,12 @@ a:focus-visible {
 .hero-inner {
   position: relative;
   z-index: 1;
-  padding: 56px 56px;   /* vorher 83px */
-  min-height: 300px;    /* vorher 420px */
+  padding: 56px 56px;   /* kompakter, aber noch genug Platz */
+  min-height: 320px;    /* genug für Headline + Buttons + Note */
   display: flex;
   align-items: center;
+}
+
 }
 /* =========================
    HERO – Feinschliff
@@ -506,8 +507,12 @@ a:focus-visible {
 
 @media (max-width: 700px) {
   .hero-inner {
-    padding: 40px 20px;
-    min-height: 260px;
+    padding: 44px 20px;
+    min-height: 320px; /* wichtig: sonst wird Text gequetscht */
+  }
+
+  .hero-bg img {
+    object-position: center 80%;
   }
 }
 
