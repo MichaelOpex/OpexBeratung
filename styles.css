@@ -396,3 +396,47 @@ a:hover{ opacity: 0.95; }
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* =========================
+   HOTFIX: Layout wieder wie vorher (Container)
+   + Anchors unter Sticky-Nav korrekt
+   -> Ganz ans Ende der styles.css
+========================= */
+
+/* Hero-Inhalt wieder im Container */
+.hero-inner{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Alle normalen Sections (nicht Hero) wieder im Container */
+main > section:not(.hero){
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Mehr Luft zwischen Sektionen wie vorher */
+main > section:not(.hero){
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+/* Sticky-Nav überdeckt keine Überschriften mehr beim Anklicken */
+#leistungen, #ueber-mich, #kontakt{
+  scroll-margin-top: 110px;
+}
+@media (max-width: 700px){
+  #leistungen, #ueber-mich, #kontakt{
+    scroll-margin-top: 150px; /* weil Nav zweizeilig wird */
+  }
+}
+
+/* Falls irgendwas noch „zu breit“ wirkt: Cards im Grid sauber begrenzen */
+.cards-3{
+  width: 100%;
+}
+
