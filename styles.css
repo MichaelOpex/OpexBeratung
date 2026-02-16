@@ -470,3 +470,20 @@ a:hover{ opacity: 0.96; }
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* ===== Hero Mobile Feintuning ===== */
+@media (max-width: 700px){
+  .hero-bg img{
+    object-position: center 72%;  /* weniger Himmel / anderer Ausschnitt */
+  }
+
+  .hero-inner{
+    padding: 22px 0 18px;         /* etwas kompakter */
+  }
+
+  .hero h1{
+    font-size: 36px;              /* minimal kompakter */
+    line-height: 1.08;
+  }
+}
+
