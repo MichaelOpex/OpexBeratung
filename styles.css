@@ -815,54 +815,53 @@ footer a:hover {
     display: block;
   }
 }
-/* --- Mobile NAV: Buttons sauber umbrechen --- */
+/* ===== Mobile NAV: gleichmäßiges Layout (2 Spalten + Kontakt volle Breite) ===== */
 @media (max-width: 700px) {
-
-  /* Nav als flex-container der umbrechen darf */
   nav[aria-label="Hauptnavigation"]{
-    display: flex !important;
-    flex-wrap: wrap !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     gap: 12px !important;
     align-items: center !important;
   }
 
-  /* Logo immer eigene Zeile */
+  /* Wichtig: Kinder dürfen NICHT mehr "nach rechts schieben" */
+  nav[aria-label="Hauptnavigation"] > *{
+    margin: 0 !important;
+  }
+
+  /* Logo über volle Breite */
   nav[aria-label="Hauptnavigation"] .brand{
-    flex: 0 0 100% !important;
+    grid-column: 1 / -1 !important;
+    justify-self: start !important;
   }
 
-  nav[aria-label="Hauptnavigation"] .brand-logo{
-    width: 150px;
-    height: auto;
-  }
-
-  /* Alle normalen Links: 2 pro Zeile (50%) */
+  /* Alle Links (Leistungen/Über mich/Lebenslauf) gleich breit */
   nav[aria-label="Hauptnavigation"] > a:not(.brand):not(.nav-cta){
-    flex: 1 1 calc(50% - 6px) !important;
-    width: auto !important;
-    min-width: 0 !important;      /* wichtig gegen "zu breite" Buttons */
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-  }
-
-  /* Kontakt: volle Breite */
-  nav[aria-label="Hauptnavigation"] .nav-cta{
-    flex: 0 0 100% !important;
     width: 100% !important;
+    justify-self: stretch !important;
+
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+
+    white-space: nowrap !important;
+    min-width: 0 !important;
+
+    /* Killt typische Flex-Tricks */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* Falls deine .btn oder Links irgendwo feste Breiten haben */
-  nav[aria-label="Hauptnavigation"] a,
-  nav[aria-label="Hauptnavigation"] .btn{
-    max-width: 100% !important;
+  /* Kontakt volle Breite */
+  nav[aria-label="Hauptnavigation"] .nav-cta{
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    justify-self: stretch !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin-left: 0 !important;
   }
 }
-
-
-
