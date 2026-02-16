@@ -501,3 +501,21 @@ html{ scroll-padding-top:110px; }
   }
 }
 
+@media (max-width: 700px){
+  .hero-actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .hero-actions .btn{
+    width: 100%;
+    justify-content: center;
+    padding: 12px 10px;
+  }
+}
+@media (max-width: 420px){
+  .hero-actions{
+    grid-template-columns: 1fr;
+  }
+}
