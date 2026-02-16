@@ -865,3 +865,18 @@ footer a:hover {
     margin-left: 0 !important;
   }
 }
+@media (max-width: 700px) {
+  nav[aria-label="Hauptnavigation"] > a:not(.brand){
+    padding: 10px 12px !important;
+    border-radius: 14px !important;
+    font-size: 16px !important;
+  }
+
+  nav[aria-label="Hauptnavigation"]{
+    gap: 10px !important;
+  }
+
+  nav[aria-label="Hauptnavigation"] .brand-logo{
+    width: 130px !important;
+  }
+}
