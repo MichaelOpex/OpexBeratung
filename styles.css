@@ -815,3 +815,38 @@ footer a:hover {
     display: block;
   }
 }
+/* --- Mobile Nav Fix --- */
+@media (max-width: 700px) {
+  nav[aria-label="Hauptnavigation"]{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: center;
+  }
+
+  /* Logo über volle Breite */
+  nav[aria-label="Hauptnavigation"] .brand{
+    grid-column: 1 / -1;
+    justify-self: start; /* oder center, wenn du willst */
+  }
+
+  nav[aria-label="Hauptnavigation"] .brand-logo{
+    width: 140px;
+    height: auto;
+  }
+
+  /* Links als gleich breite "Chips" */
+  nav[aria-label="Hauptnavigation"] a{
+    text-align: center;
+    white-space: nowrap;
+    padding: 12px 14px;
+    border-radius: 16px;
+  }
+
+  /* Kontakt über volle Breite */
+  nav[aria-label="Hauptnavigation"] .nav-cta{
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+}
+
