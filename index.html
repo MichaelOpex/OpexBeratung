@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Lebenslauf – Michael Christmann</title>
-  <meta name="description" content="Profil und Lebenslauf von Michael Christmann – Beratung, Coaching und Projektmanagement.">
+  <title>OPEX – Beratung • Coaching • Projektmanagement</title>
+  <meta name="description" content="Operational Excellence Beratung, Coaching und Projektmanagement: Klarheit schaffen, Entscheidungen ermöglichen und Umsetzung sicherstellen.">
   <meta name="robots" content="noindex, nofollow">
 
   <link rel="icon" href="assets/icons/favicon.ico">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
-  <meta property="og:title" content="Lebenslauf – Michael Christmann">
-  <meta property="og:description" content="Profil und Lebenslauf – Beratung, Coaching und Projektmanagement.">
+  <meta property="og:title" content="OPEX – Beratung">
+  <meta property="og:description" content="Operational Excellence: Analyse, Beratung und Coachingbegleitung im Operationsumfeld für produzierende Unternehmen.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/og-image.png">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lebenslauf – Michael Christmann">
-  <meta name="twitter:description" content="Profil und Lebenslauf – Beratung, Coaching und Projektmanagement.">
+  <meta name="twitter:title" content="OPEX – Beratung">
+  <meta name="twitter:description" content="Operational Excellence: Analyse, Beratung und Coachingbegleitung im Operationsumfeld für produzierende Unternehmen.">
   <meta name="twitter:image" content="assets/images/og-image.png">
 
   <link rel="preload" href="styles.css" as="style">
@@ -28,7 +28,8 @@
 <body>
   <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-  <nav aria-label="Hauptnavigation">
+  <!-- STABILE NAV (ohne Burger/JS) -->
+  <nav class="site-nav" aria-label="Hauptnavigation">
     <a href="index.html" class="brand" aria-label="Start">
       <img
         class="brand-logo"
@@ -42,177 +43,140 @@
       >
     </a>
 
-    <a href="index.html#leistungen">Leistungen</a>
-    <a href="index.html#ueber-mich">Über mich</a>
-    <a href="lebenslauf.html" class="active" aria-current="page">Lebenslauf</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#ueber-mich">Über mich</a>
+    <a href="lebenslauf.html">Lebenslauf</a>
     <a href="mailto:michael.christmann70@gmx.de" class="btn btn-primary nav-cta">Kontakt</a>
   </nav>
 
-<main id="main">
-  <section class="cv" aria-label="Lebenslauf">
-    <header class="cv-header">
-      <div class="cv-title">
-        <h1>Michael Christmann</h1>
-        <p class="cv-subtitle">
-          Operational Excellence · CI/TPM · Lean · Projektmanagement
-        </p>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Start">
+      <picture class="hero-bg" aria-hidden="true">
+        <source
+          type="image/webp"
+          srcset="assets/images/hero-industrie-800.webp 800w, assets/images/hero-industrie-1200.webp 1200w, assets/images/hero-industrie-1600.webp 1600w, assets/images/hero-industrie-2000.webp 2000w"
+          sizes="100vw"
+        >
+        <img
+          src="assets/images/hero-industrie-1200.jpg"
+          srcset="assets/images/hero-industrie-800.jpg 800w, assets/images/hero-industrie-1200.jpg 1200w, assets/images/hero-industrie-1600.jpg 1600w, assets/images/hero-industrie-2000.jpg 2000w"
+          sizes="100vw"
+          alt=""
+          loading="eager"
+          decoding="async"
+        >
+      </picture>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Klarheit schaffen. Entscheidungen ermöglichen. Umsetzung sicherstellen.</h1>
+
+          <p class="hero-lead">
+            Analyse, Beratung und Coachingbegleitung im Operationsumfeld, für produzierende Unternehmen:
+            Verluste reduzieren um die Wirtschaftlichkeit nachhaltig und wirksam verbessern.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
+            <a class="btn btn-ghost" href="#leistungen">Leistungen ansehen</a>
+          </div>
+
+          <p class="hero-note">
+            Operational Excellence · Lean · Six Sigma · KVP - systematisch, pragmatisch, lösungsorientiert, umsetzungsstark.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="cv-contact">
-        <a class="cv-contact-item" href="tel:+4915110767125">+49 151 10767125</a>
-        <a class="cv-contact-item" href="mailto:michael.christmann70@gmx.de">michael.christmann70@gmx.de</a>
-        <span class="cv-contact-item">Frankfurt</span>
-      </div>
-    </header>
+    <!-- LEISTUNGEN -->
+    <section id="leistungen">
+      <h2>Leistungen:</h2>
+      <p>Ein ganzheitlicher Ansatz zur erfolgreichen und nachhaltigen Verlustbeseitigung.</p>
 
-    <div class="hr"></div>
-
-    <div class="cv-grid">
-      <!-- ASIDE -->
-      <aside class="cv-aside">
-        <h2>Profil</h2>
-        <p>
-          Ergebnis- und umsetzungsorientierte Begleitung von Verbesserungs- und Transformationsvorhaben
-          in Industrieumfeldern (Lebensmittel, Pharma, Chemie) – strukturiert, pragmatisch, wirksam.
-        </p>
-
-        <div class="hr"></div>
-
-        <h2>Kompetenzen</h2>
-
-        <!-- Desktop: 3 Cluster -->
-        <div class="skill-clusters">
-          <div class="skill-cluster">
-            <h3 class="skill-title">Operational Excellence</h3>
-            <p class="skill-text">OPEX/CI/FI, Lean, Shopfloor Management, Standard Erstellung,OEE</p>
-          </div>
-
-          <div class="skill-cluster">
-            <h3 class="skill-title">Methoden</h3>
-            <p class="skill-text">Lean Six Sigma (Black Belt), DMAIC, SMED, 5S, Wertstrom, Zeit-/Prozessstudien, Produktionscontrolling</p>
-          </div>
-
-          <div class="skill-cluster">
-            <h3 class="skill-title">Führung &amp; Change</h3>
-            <p class="skill-text">20 Jahre Führungserfahrung, Stakeholder Management, bereichsübergreifende Umsetzung</p>
-          </div>
+      <div class="cards-3">
+        <div class="card">
+          <h3>Potenzial-Analyse</h3>
+          <p>
+            Bewerten der aktuellen Situation im Unternehmen.
+            Schaffen von Leistungstransparenz und Verlustbewusstsein, durch Aufzeigen von Schwachstellen, Verlusten und Verbesserungspotenzialen, basierend auf Ihrer Performance und Ihren Daten.
+            Mit klaren Optionen und als belastbare Entscheidungsgrundlage – ohne unnötige Komplexität.
+          </p>
         </div>
 
-        <!-- Mobile: einklappbar -->
-        <details class="skill-details">
-          <summary>Kompetenzen (kompakt)</summary>
-          <div class="skill-details-inner">
-            <p><strong>Operational Excellence:</strong> OPEX/CI/FI, Lean, Shopfloor Management, Standards, OEE</p>
-            <p><strong>Methoden:</strong> Lean Six Sigma (BB), DMAIC, SMED, 5S, Wertstrom, Zeit-/Prozessstudien, Produktionscontrolling</p>
-            <p><strong>Führung &amp; Change:</strong> Führung, Stakeholder, bereichsübergreifend</p>
-          </div>
-        </details>
+        <div class="card">
+          <h3>Strategie</h3>
+          <p>
+            In Abhängigkeit zu Ihren Zielen und Anforderungen: Erstellen einer maßgeschneiderten Umsetzungsstrategie zur Eliminierung der Top-Verluste und dem Einführen von Mechanismen zur nachhaltigen Absicherung der Projektergebnisse – ruhig und pragmatisch und auf den Alltag übertragbar.
+          </p>
+        </div>
 
-        <div class="hr"></div>
-
-        <h2>Ausbildung &amp; Zertifikate</h2>
-        <ul class="cv-list-tight">
-          <li>01/2007 – 12/2007 · WIBK (Paderborn) · Prozessbegleiter</li>
-          <li>07/2006 – 10/2006 · IFSS (Wien) · Zertifizierter Lean Six Sigma Black Belt</li>
-          <li>03/2001 – 10/2001 · Interne SAP Qualifikation · SAP MM</li>
-          <li>10/1992 – 08/1996 · Hochschule Trier · Dipl.-Ing. (FH) Lebensmitteltechnik</li>
-          <li>08/1986 – 06/1989 · Fleischerei H. Schmitz (Trier) · Gesellenbrief</li>
-        </ul>
-
-        <div class="hr"></div>
-
-        <h2>Sprachen</h2>
-        <ul>
-          <li>Deutsch: Muttersprache</li>
-          <li>Englisch: C1</li>
-          <li>Französisch: A2</li>
-        </ul>
-      </aside>
-
-      <!-- MAIN -->
-      <div class="cv-main">
-        <h2>Ausgewählte Berufserfahrung</h2>
-
-        <article class="cv-item">
-          <div class="cv-date">07/2022 – aktuell</div>
-          <div class="cv-body">
-            <h3 class="cv-role">KVP Manager</h3>
-            <div class="cv-org">EFESO Management Consulting AG · Berlin</div>
-            <ul>
-              <li>Aufbau &amp; Umsetzung von Verbesserungsinitiativen zur Verlustreduzierung</li>
-              <li>Identifikation von Einsparungspotenzialen</li>
-              <li>Einführung von OPEX-Werkzeugen &amp; Shopfloor Management (OEE, OTIF, Produktionscontrolling)</li>
-              <li>Aufbau/Auditierung von CI-Programmen und Initiativen (Branchen: Lebensmittel, Pharma, Chemie, Metallverarbeitung)</li>
-              <li>Durchführung von Betriebsanalysen und Systems Reviews als Grundlage für weitere Initiativen</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="cv-item">
-          <div class="cv-date">11/2020 – 06/2022</div>
-          <div class="cv-body">
-            <h3 class="cv-role">CI Manager (Inhouse Consultant)</h3>
-            <div class="cv-org">Mucos Pharma GmbH &amp; Co. KG · Berlin</div>
-            <ul>
-              <li>Aufbau &amp; Umsetzung einer CI-Strategie</li>
-              <li>Einführung von OPEX/Lean/TPM Elementen entlang der Wertschöpfung durch die Umsetzung priorisierter Schlüsselprojekte</li>
-              <li>Anwendung u. a. DMAIC, SMED, 5S, Wertstromanalysen sowie Zeit- und Prozessstudien</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="cv-item">
-          <div class="cv-date">03/2017 – 10/2020</div>
-          <div class="cv-body">
-            <h3 class="cv-role">Performance Improvement Manager</h3>
-            <div class="cv-org">Nestlé Deutschland AG · bundesweit</div>
-            <ul>
-              <li>Senior Projektmanagement von umfangreichen Einsparungs- &amp; Restrukturierungsinitiativen an zwei großen Fabrikstandorten</li>
-              <li>Steigerung Anlagenverfügbarkeit (AI/OEE) durch Aufbau GMP-konformer Rüst- &amp; Reinigungsstandards</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="cv-item">
-          <div class="cv-date">11/2014 – 02/2017</div>
-          <div class="cv-body">
-            <h3 class="cv-role">Leiter Industrielle Performance (OPEX/IP/FI)</h3>
-            <div class="cv-org">Nestlé Wagner GmbH · Nonnweiler</div>
-            <ul>
-              <li>Aufbau &amp; Leitung OE/IP-Abteilung</li>
-              <li>Weiterentwicklung Produktionsstandards (u. a. OEE, Shopfloor) und Operativen Budgetstrukturen</li>
-              <li>Priorisierung und Umsetzen von Verbesserungsprojekten zur Verbesserung der Wirtschaftlichkeit</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="cv-item">
-          <div class="cv-date">01/2012 – 10/2014</div>
-          <div class="cv-body">
-            <h3 class="cv-role">Focus Improvement Marktsäulenleiter (Inhouse Consultant)</h3>
-            <div class="cv-org">Nestlé Deutschland AG · bundesweit</div>
-            <ul>
-              <li>Lean Six Sigma / OPEX Verantwortung in Produktion, Technik &amp; Qualität im Rahmen der weltweiten NCE-Initiative</li>
-            </ul>
-          </div>
-        </article>
-
-        <div class="hr"></div>
-
-        <h2>Frühere Stationen</h2>
-        <ul class="cv-compact">
-          <li>10/2010 – 12/2011 · Leiter Einkauf &amp; Logistik · Fronhoffs GmbH</li>
-          <li>07/2009 – 08/2010 · Leiter Lager &amp; interne Logistik · Erlenbacher Backwaren GmbH</li>
-          <li>07/2006 – 06/2009 · Leiter Six Sigma Projektmanagement · Erlenbacher Backwaren GmbH</li>
-          <li>01/2002 – 06/2006 · Gruppenleiter Einkauf · Erlenbacher Backwaren GmbH</li>
-          <li>06/1997 – 12/2001 · Projektmanager Produktentwicklung · Erlenbacher Backwaren GmbH</li>
-        </ul>
-
-        <p class="muted cv-updated">Stand: Januar 2026</p>
+        <div class="card">
+          <h3>Projektmanagement</h3>
+          <p>
+            Sicherstellen der Zielerreichung durch das Durchführen der abgeleiteten Projekte mit Lean Six Sigma Werkzeugen hin zu messbaren und nachhaltigen Ergebnissen.
+            Ebenso die Ausbildung und Coachingbegleitung der internen Projektmanager und Verbesserungsteams – hin zu einer schlagkräftigen KVP-Organisation.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <!-- ÜBER MICH -->
+    <section id="ueber-mich">
+      <header class="section-head">
+        <h2>Über mich</h2>
+        <p>Operational Excellence Experte und Lean Six Sigma Blackbelt</p>
+      </header>
+
+      <div class="about-grid">
+        <figure class="about-portrait">
+          <picture>
+            <source type="image/webp"
+              srcset="assets/images/portrait-michael-360.webp 360w, assets/images/portrait-michael-720.webp 720w"
+              sizes="(max-width: 700px) 140px, 180px">
+            <img
+              src="assets/images/portrait-michael-360.jpg"
+              srcset="assets/images/portrait-michael-360.jpg 360w, assets/images/portrait-michael-720.jpg 720w"
+              sizes="(max-width: 700px) 140px, 180px"
+              alt="Portrait von Michael Christmann"
+              width="180"
+              height="239"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+        </figure>
+
+        <div class="about-text">
+          <p>
+            Aus der Praxis, für die Praxis – 25 Jahre Erfahrung als Operationsmanager, in der Schnittstelle zwischen Produktentwicklung, Beschaffung, Produktion, Technik, Logistik,
+            Qualitätswesen und Controlling und in der erfolgreichen Umsetzung vielfältiger Verbesserungsprojekte in alle diesen Bereichen, sowie der Führen von umfangreichen
+            KVP-Initiativen in verschiedenen Industrien. Abhängig von Ihren Zielen und Anforderungen übernehme ich die Verantwortung, um Sie als zuverlässiger und erfahrener Partner,
+            mit einer maßgeschneiderten Lösung für die Transformation Ihres Unternehmens bis hin zu Operational Excellence wirksam zu begleiten.
+          </p>
+          <p>
+            Gerne unterstütze ich Sie und Ihre Mitarbeiter im Operationsumfeld mit meiner fachlichen Kompetenz: Durch die Analyse der aktuellen Situation erzeuge ich die notwendige Transparenz,
+            um daraus gemeinsam mit Ihnen strategische und zielführende Maßnahmen abzuleiten und das weitere Vorgehen auszurichten und zu steuern.
+            Als Projektleiter sorge ich für die nachhaltige Umsetzung der benötigten Ergebnisse und übernehme das Coaching und ggf. die Entwicklung Ihrer Projektleiter und Teammitglieder
+            zu autonomen KVP-Spezialisten.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <header class="section-head">
+        <h2>Kontakt</h2>
+        <p>Wenn Sie schon ein konkretes Anliegen haben oder noch nicht wissen, ob und wie ich Sie unterstützen kann, freue ich mich auf eine Kontaktaufnahme. Ein kurzes Gespräch reicht oft schon für erste Klarheit.</p>
+      </header>
+
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:michael.christmann70@gmx.de">E-Mail schreiben</a>
+        <a class="btn btn-outline" href="tel:+4915110767125">Anrufen</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>
