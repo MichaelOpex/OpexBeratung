@@ -213,5 +213,48 @@ Als Projektleiter sorge ich für die nachhaltige Umsetzung der benötigten Ergeb
       <a href="datenschutz.html">Datenschutz</a>
     </p>
   </footer>
+  <script>
+  (function () {
+    const btn = document.querySelector(".nav-toggle");
+    const menu = document.getElementById("mobileMenu");
+    if (!btn || !menu) return;
+
+    function closeMenu() {
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-label", "Menü öffnen");
+      menu.hidden = true;
+    }
+
+    function openMenu() {
+      btn.setAttribute("aria-expanded", "true");
+      btn.setAttribute("aria-label", "Menü schließen");
+      menu.hidden = false;
+    }
+
+    btn.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    // Klick außerhalb schließt
+    document.addEventListener("click", (e) => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      if (!isOpen) return;
+      if (menu.contains(e.target) || btn.contains(e.target)) return;
+      closeMenu();
+    });
+
+    // ESC schließt
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    // Beim Link-Klick schließen
+    menu.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => closeMenu());
+    });
+  })();
+</script>
+
 </body>
 </html>
