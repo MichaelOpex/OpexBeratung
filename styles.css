@@ -815,39 +815,54 @@ footer a:hover {
     display: block;
   }
 }
-/* --- Mobile Nav Fix --- */
+/* --- Mobile NAV: Buttons sauber umbrechen --- */
 @media (max-width: 700px) {
+
+  /* Nav als flex-container der umbrechen darf */
   nav[aria-label="Hauptnavigation"]{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    align-items: center;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    align-items: center !important;
   }
 
-  /* Logo über volle Breite */
+  /* Logo immer eigene Zeile */
   nav[aria-label="Hauptnavigation"] .brand{
-    grid-column: 1 / -1;
-    justify-self: start; /* oder center, wenn du willst */
+    flex: 0 0 100% !important;
   }
 
   nav[aria-label="Hauptnavigation"] .brand-logo{
-    width: 140px;
+    width: 150px;
     height: auto;
   }
 
-  /* Links als gleich breite "Chips" */
-  nav[aria-label="Hauptnavigation"] a{
-    text-align: center;
-    white-space: nowrap;
-    padding: 12px 14px;
-    border-radius: 16px;
+  /* Alle normalen Links: 2 pro Zeile (50%) */
+  nav[aria-label="Hauptnavigation"] > a:not(.brand):not(.nav-cta){
+    flex: 1 1 calc(50% - 6px) !important;
+    width: auto !important;
+    min-width: 0 !important;      /* wichtig gegen "zu breite" Buttons */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
   }
 
-  /* Kontakt über volle Breite */
+  /* Kontakt: volle Breite */
   nav[aria-label="Hauptnavigation"] .nav-cta{
-    grid-column: 1 / -1;
-    width: 100%;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Falls deine .btn oder Links irgendwo feste Breiten haben */
+  nav[aria-label="Hauptnavigation"] a,
+  nav[aria-label="Hauptnavigation"] .btn{
+    max-width: 100% !important;
   }
 }
+
 
 
