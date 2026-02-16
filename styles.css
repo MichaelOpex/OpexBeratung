@@ -880,3 +880,111 @@ footer a:hover {
     width: 130px !important;
   }
 }
+/* ===== Premium Nav (Desktop + Mobile Burger) ===== */
+.site-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  position: relative;
+}
+
+/* Desktop Links normal sichtbar */
+.site-nav .nav-links{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Burger Button (desktop versteckt) */
+.site-nav .nav-toggle{
+  display: none;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  border-radius: 14px;
+  padding: 10px 12px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.22);
+}
+
+.site-nav .nav-toggle:focus{
+  outline: 3px solid rgba(96,165,250,0.35);
+  outline-offset: 2px;
+}
+
+.nav-toggle-lines{
+  display: inline-block;
+  width: 22px;
+  height: 14px;
+  position: relative;
+}
+.nav-toggle-lines::before,
+.nav-toggle-lines::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 99px;
+}
+.nav-toggle-lines::before{ top: 2px; }
+.nav-toggle-lines::after{ bottom: 2px; }
+
+/* Mobile Dropdown */
+.mobile-menu{
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(360px, calc(100vw - 24px));
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: grid;
+  gap: 10px;
+  z-index: 999;
+}
+
+.mobile-menu a{
+  display: block;
+  text-align: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.mobile-menu a:hover{
+  background: rgba(255,255,255,0.10);
+}
+
+/* Mobile: Desktop Links verstecken, Burger zeigen */
+@media (max-width: 700px){
+  .site-nav{
+    padding-top: 4px;
+  }
+
+  .site-nav .nav-links{
+    display: none;
+  }
+
+  .site-nav .nav-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-nav .brand-logo{
+    width: 130px;
+    height: auto;
+  }
+}
