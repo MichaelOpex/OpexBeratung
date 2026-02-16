@@ -28,25 +28,30 @@
 <body>
   <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-  <nav class="site-nav" aria-label="Hauptnavigation">
-    <a href="index.html" class="brand" aria-label="Start">
-      <img
-        class="brand-logo"
-        src="assets/images/logo-opex-200.png"
-        srcset="assets/images/logo-opex-200.png 200w, assets/images/logo-opex-320.png 320w"
-        sizes="(max-width: 700px) 120px, 150px"
-        alt="OPEX"
-        width="150"
-        height="38"
-        decoding="async"
-      >
-    </a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="index.html" class="brand" aria-label="Start">
+        <img
+          class="brand-logo"
+          src="assets/images/logo-opex-200.png"
+          srcset="assets/images/logo-opex-200.png 200w, assets/images/logo-opex-320.png 320w"
+          sizes="(max-width: 700px) 120px, 150px"
+          alt="OPEX"
+          width="150"
+          height="38"
+          decoding="async"
+        >
+      </a>
 
-    <a href="#leistungen">Leistungen</a>
-    <a href="#ueber-mich">Über mich</a>
-    <a href="lebenslauf.html">Lebenslauf</a>
-    <a href="mailto:michael.christmann70@gmx.de" class="btn btn-primary nav-cta">Kontakt</a>
-  </nav>
+      <div class="nav-pills" aria-label="Seitenlinks">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="lebenslauf.html">Lebenslauf</a>
+      </div>
+
+      <a href="mailto:michael.christmann70@gmx.de" class="btn btn-primary nav-cta">Kontakt</a>
+    </nav>
+  </header>
 
   <main id="main">
     <!-- HERO -->
@@ -67,7 +72,7 @@
         >
       </picture>
 
-      <div class="hero-inner">
+      <div class="container hero-inner">
         <div class="hero-content">
           <h1>Klarheit schaffen. Entscheidungen ermöglichen. Umsetzung sicherstellen.</h1>
 
@@ -82,97 +87,106 @@
           </div>
 
           <p class="hero-note">
-            Operational Excellence · Lean · Six Sigma · KVP - systematisch, pragmatisch, lösungsorientiert, umsetzungsstark.
+            Operational Excellence · Lean · Six Sigma · KVP – systematisch, pragmatisch, lösungsorientiert, umsetzungsstark.
           </p>
         </div>
       </div>
     </section>
 
     <!-- LEISTUNGEN -->
-    <section id="leistungen">
-      <h2>Leistungen:</h2>
-      <p>Ein ganzheitlicher Ansatz zur erfolgreichen und nachhaltigen Verlustbeseitigung.</p>
+    <section id="leistungen" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Leistungen</h2>
+          <p>Ein ganzheitlicher Ansatz zur erfolgreichen und nachhaltigen Verlustbeseitigung.</p>
+        </header>
 
-      <div class="cards-3">
-        <div class="card">
-          <h3>Potenzial-Analyse</h3>
-          <p>
-            Bewerten der aktuellen Situation im Unternehmen.
-            Schaffen von Leistungstransparenz und Verlustbewusstsein, durch Aufzeigen von Schwachstellen, Verlusten und Verbesserungspotenzialen, basierend auf Ihrer Performance und Ihren Daten.
-            Mit klaren Optionen und als belastbare Entscheidungsgrundlage – ohne unnötige Komplexität.
-          </p>
-        </div>
+        <div class="cards-3">
+          <div class="card">
+            <h3>Potenzial-Analyse</h3>
+            <p>
+              Bewerten der aktuellen Situation im Unternehmen. Schaffen von Leistungstransparenz und Verlustbewusstsein,
+              durch Aufzeigen von Schwachstellen, Verlusten und Verbesserungspotenzialen, basierend auf Ihrer Performance und Ihren Daten.
+              Mit klaren Optionen und als belastbare Entscheidungsgrundlage – ohne unnötige Komplexität.
+            </p>
+          </div>
 
-        <div class="card">
-          <h3>Strategie</h3>
-          <p>
-            In Abhängigkeit zu Ihren Zielen und Anforderungen: Erstellen einer maßgeschneiderten Umsetzungsstrategie zur Eliminierung der Top-Verluste und dem Einführen von Mechanismen zur nachhaltigen Absicherung der Projektergebnisse – ruhig und pragmatisch und auf den Alltag übertragbar.
-          </p>
-        </div>
+          <div class="card">
+            <h3>Strategie</h3>
+            <p>
+              In Abhängigkeit zu Ihren Zielen und Anforderungen: Erstellen einer maßgeschneiderten Umsetzungsstrategie zur Eliminierung der Top-Verluste
+              und dem Einführen von Mechanismen zur nachhaltigen Absicherung der Projektergebnisse – ruhig, pragmatisch und auf den Alltag übertragbar.
+            </p>
+          </div>
 
-        <div class="card">
-          <h3>Projektmanagement</h3>
-          <p>
-            Sicherstellen der Zielerreichung durch das Durchführen der abgeleiteten Projekte mit Lean Six Sigma Werkzeugen hin zu messbaren und nachhaltigen Ergebnissen.
-            Ebenso die Ausbildung und Coachingbegleitung der internen Projektmanager und Verbesserungsteams – hin zu einer schlagkräftigen KVP-Organisation.
-          </p>
+          <div class="card">
+            <h3>Projektmanagement</h3>
+            <p>
+              Sicherstellen der Zielerreichung durch das Durchführen der abgeleiteten Projekte mit Lean Six Sigma Werkzeugen hin zu messbaren und nachhaltigen Ergebnissen.
+              Ebenso die Ausbildung und Coachingbegleitung der internen Projektmanager und Verbesserungsteams – hin zu einer schlagkräftigen KVP-Organisation.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ÜBER MICH -->
-    <section id="ueber-mich">
-      <header class="section-head">
-        <h2>Über mich</h2>
-        <p>Operational Excellence Experte und Lean Six Sigma Blackbelt</p>
-      </header>
+    <section id="ueber-mich" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Über mich</h2>
+          <p>Operational Excellence Experte und Lean Six Sigma Blackbelt</p>
+        </header>
 
-      <div class="about-grid">
-        <figure class="about-portrait">
-          <picture>
-            <source type="image/webp"
-              srcset="assets/images/portrait-michael-360.webp 360w, assets/images/portrait-michael-720.webp 720w"
-              sizes="(max-width: 700px) 140px, 180px">
-            <img
-              src="assets/images/portrait-michael-360.jpg"
-              srcset="assets/images/portrait-michael-360.jpg 360w, assets/images/portrait-michael-720.jpg 720w"
-              sizes="(max-width: 700px) 140px, 180px"
-              alt="Portrait von Michael Christmann"
-              width="180"
-              height="239"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-        </figure>
+        <div class="about-grid">
+          <figure class="about-portrait">
+            <picture>
+              <source type="image/webp"
+                srcset="assets/images/portrait-michael-360.webp 360w, assets/images/portrait-michael-720.webp 720w"
+                sizes="(max-width: 700px) 140px, 180px">
+              <img
+                src="assets/images/portrait-michael-360.jpg"
+                srcset="assets/images/portrait-michael-360.jpg 360w, assets/images/portrait-michael-720.jpg 720w"
+                sizes="(max-width: 700px) 140px, 180px"
+                alt="Portrait von Michael Christmann"
+                width="180"
+                height="239"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </figure>
 
-        <div class="about-text">
-          <p>
-            Aus der Praxis, für die Praxis – 25 Jahre Erfahrung als Operationsmanager, in der Schnittstelle zwischen Produktentwicklung, Beschaffung, Produktion, Technik, Logistik,
-            Qualitätswesen und Controlling und in der erfolgreichen Umsetzung vielfältiger Verbesserungsprojekte in alle diesen Bereichen, sowie der Führen von umfangreichen
-            KVP-Initiativen in verschiedenen Industrien. Abhängig von Ihren Zielen und Anforderungen übernehme ich die Verantwortung, um Sie als zuverlässiger und erfahrener Partner,
-            mit einer maßgeschneiderten Lösung für die Transformation Ihres Unternehmens bis hin zu Operational Excellence wirksam zu begleiten.
-          </p>
-          <p>
-            Gerne unterstütze ich Sie und Ihre Mitarbeiter im Operationsumfeld mit meiner fachlichen Kompetenz: Durch die Analyse der aktuellen Situation erzeuge ich die notwendige Transparenz,
-            um daraus gemeinsam mit Ihnen strategische und zielführende Maßnahmen abzuleiten und das weitere Vorgehen auszurichten und zu steuern.
-            Als Projektleiter sorge ich für die nachhaltige Umsetzung der benötigten Ergebnisse und übernehme das Coaching und ggf. die Entwicklung Ihrer Projektleiter und Teammitglieder
-            zu autonomen KVP-Spezialisten.
-          </p>
+          <div class="about-text">
+            <p>
+              Aus der Praxis, für die Praxis – 25 Jahre Erfahrung als Operationsmanager, in der Schnittstelle zwischen Produktentwicklung, Beschaffung, Produktion, Technik, Logistik,
+              Qualitätswesen und Controlling und in der erfolgreichen Umsetzung vielfältiger Verbesserungsprojekte in all diesen Bereichen, sowie dem Führen von umfangreichen
+              KVP-Initiativen in verschiedenen Industrien. Abhängig von Ihren Zielen und Anforderungen übernehme ich die Verantwortung, um Sie als zuverlässiger und erfahrener Partner,
+              mit einer maßgeschneiderten Lösung für die Transformation Ihres Unternehmens bis hin zu Operational Excellence wirksam zu begleiten.
+            </p>
+            <p>
+              Gerne unterstütze ich Sie und Ihre Mitarbeiter im Operationsumfeld mit meiner fachlichen Kompetenz: Durch die Analyse der aktuellen Situation erzeuge ich die notwendige Transparenz,
+              um daraus gemeinsam mit Ihnen strategische und zielführende Maßnahmen abzuleiten und das weitere Vorgehen auszurichten und zu steuern.
+              Als Projektleiter sorge ich für die nachhaltige Umsetzung der benötigten Ergebnisse und übernehme das Coaching und ggf. die Entwicklung Ihrer Projektleiter und Teammitglieder
+              zu autonomen KVP-Spezialisten.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- KONTAKT -->
-    <section id="kontakt">
-      <header class="section-head">
-        <h2>Kontakt</h2>
-        <p>Wenn Sie schon ein konkretes Anliegen haben oder noch nicht wissen, ob und wie ich Sie unterstützen kann, freue ich mich auf eine Kontaktaufnahme. Ein kurzes Gespräch reicht oft schon für erste Klarheit.</p>
-      </header>
+    <section id="kontakt" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Kontakt</h2>
+          <p>Ein kurzes Gespräch reicht oft schon für erste Klarheit. Ich freue mich auf Ihre Kontaktaufnahme.</p>
+        </header>
 
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="mailto:michael.christmann70@gmx.de">E-Mail schreiben</a>
-        <a class="btn btn-outline" href="tel:+4915110767125">Anrufen</a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:michael.christmann70@gmx.de">E-Mail schreiben</a>
+          <a class="btn btn-outline" href="tel:+4915110767125">Anrufen</a>
+        </div>
       </div>
     </section>
   </main>
