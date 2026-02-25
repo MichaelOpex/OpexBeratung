@@ -3,72 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Impressum – OPEX</title>
-  <meta name="description" content="Impressum der Website von Michael Christmann.">
+  <title>Impressum – OPEX Beratung</title>
+  <meta name="description" content="Impressum der OPEX Beratung – Michael Christmann.">
   <meta name="robots" content="noindex, nofollow">
-
-  <link rel="icon" href="assets/icons/favicon.ico">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-
-  <meta property="og:title" content="Impressum – OPEX">
-  <meta property="og:description" content="Impressum der Website von Michael Christmann.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/og-image.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Impressum – OPEX">
-  <meta name="twitter:description" content="Impressum der Website von Michael Christmann.">
-  <meta name="twitter:image" content="assets/images/og-image.png">
-
-  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-  <nav aria-label="Hauptnavigation">
-    <a href="index.html" class="brand" aria-label="Start">
-      <img
-        class="brand-logo"
-        src="assets/images/logo-opex-200.png"
-        srcset="assets/images/logo-opex-200.png 200w, assets/images/logo-opex-320.png 320w"
-        sizes="(max-width: 700px) 120px, 150px"
-        alt="OPEX"
-        width="150"
-        height="38"
-        decoding="async"
-      >
-    </a>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="brand">
+        <img class="brand-logo"
+          src="assets/images/logo-opex-200.png"
+          alt="OPEX"
+          width="150"
+          height="38">
+      </a>
+      <div class="nav-pills">
+        <a href="index.html#leistungen">Leistungen</a>
+        <a href="index.html#ueber-mich">Über mich</a>
+        <a href="lebenslauf.html">Lebenslauf</a>
+      </div>
+      <a href="mailto:michael.christmann@opexberatung.de" class="btn btn-primary nav-cta">Kontakt</a>
+    </nav>
+  </header>
 
-    <a href="index.html#leistungen">Leistungen</a>
-    <a href="index.html#ueber-mich">Über mich</a>
-    <a href="lebenslauf.html">Lebenslauf</a>
-    <a href="#kontakt" class="btn btn-primary nav-cta">Kontakt</a>
-  </nav>
+  <main id="main" class="section">
+    <div class="container legal-page">
 
-  <main id="main">
-    <section>
       <h1>Impressum</h1>
-      <p>[Platzhalter – Angaben nach § 5 TMG / § 18 MStV einsetzen]</p>
+
+      <h2>Angaben gemäß § 5 TMG</h2>
+
+      <p>
+        Diplom Lebensmitteltechnologe (FH)<br>
+        Michael Christmann<br>
+        OPEX-Beratung<br>
+        Niedergartenweg 4<br>
+        64331 Weiterstadt
+      </p>
 
       <h2>Kontakt</h2>
-      <p>[E-Mail / Telefon]</p>
+      <p>
+        Telefon: <a href="tel:+4915110767125">+49 (0)1511 0767125</a><br>
+        E-Mail: <a href="mailto:michael.christmann@opexberatung.de">michael.christmann@opexberatung.de</a>
+      </p>
 
-      <h2>Haftungshinweis</h2>
-      <p>[Platzhaltertext – wird später ergänzt]</p>
-    </section>
+      <h2>EU-Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">
+          https://ec.europa.eu/consumers/odr/
+        </a>.
+      </p>
+
+      <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+      <p>
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+    </div>
   </main>
 
-  <footer>
-    <p>
-      © 2026 Michael Christmann ·
-      <a href="index.html">Start</a> ·
-      <a href="lebenslauf.html">Lebenslauf</a> ·
-      <a href="impressum.html" aria-current="page">Impressum</a> ·
-      <a href="datenschutz.html">Datenschutz</a>
-    </p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Michael Christmann</p>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="lebenslauf.html">Lebenslauf</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
